@@ -4,7 +4,9 @@ Public portfolio site for Janice Tai (Wai Ming), Year 3 Dual Degree student at H
 
 ## Live site
 
-The site is published with GitHub Pages from this repository.
+Live site: https://janicetaiwm.github.io/MyWebsite/
+
+Source: https://github.com/JaniceTaiwm/MyWebsite
 
 ## Local preview
 
