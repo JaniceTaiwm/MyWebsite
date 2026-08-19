@@ -2,12 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=index.html#resume" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6E2C3A" />
+    <meta name="description" content="Resume of Janice Tai." />
     <title>Janice Tai · Resume</title>
-    <link rel="canonical" href="index.html#resume" />
-    <script>location.replace("index.html#resume");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <p><a href="index.html#resume">Continue to resume</a></p>
+  <body class="inner-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Janice Tai</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="awards.html">Awards</a>
+          <a href="skills.html">Skills</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="resume.html" aria-current="page">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+
+      <div class="container page">
+        <div class="page-actions">
+          <div>
+            <p class="eyebrow reveal">Resume</p>
+            <h1 class="reveal">A concise overview</h1>
+          </div>
+          <button class="btn btn-primary reveal" type="button" data-print>Print / Save as PDF</button>
+        </div>
+        <div class="resume-layout">
+          <div class="resume-panel reveal">
+            <section class="resume-block">
+              <h2>Education</h2>
+              <h3>HKUST</h3>
+              <p>Dual Degree in Technology and Management – BEng Computer Engineering and BBA Marketing · Expected 2028 · Full Admission Scholarship · EPFL Exchange completed Spring 2026</p>
+              <h3>Heep Yunn School</h3>
+              <p>HKDSE, June 2023 · Prefect Leader; Visual Arts Club Vice-Chairperson; Archery Team Captain</p>
+            </section>
+            <section class="resume-block">
+              <h2>Experience</h2>
+              <p><strong>HICA</strong> – AI Researcher Intern · Jul–Aug 2026</p>
+              <p><strong>C&amp;T</strong> – Junior Programmer intern · Jun 2024–Aug 2025</p>
+              <p><strong>Mobut</strong> – Prompt Engineer intern · Jan 2025</p>
+              <p><strong>Creato</strong> – Digital Marketing Intern · Jun–Aug 2024</p>
+            </section>
+            <section class="resume-block">
+              <h2>Leadership &amp; awards</h2>
+              <p>DDPOC Vice-President (Internal) · HKICC Main Team Buddy · GDG emcee · Fung Scholar</p>
+              <p>HKFBS BA Paper Case Competition, 1st Runner-Up · IBPC, 2nd Runner-Up · J.P. Morgan Chase AWM Challenge, Semi-finalist · BlackRock Insight Experience, 2025</p>
+            </section>
+          </div>
+          <aside class="resume-side reveal" style="--d: 0.12s">
+            <h2>Contact</h2>
+            <p>Hong Kong<br />English · Cantonese · Putonghua</p>
+            <p>
+              <a href="mailto:waimingjanicetai@gmail.com">waimingjanicetai@gmail.com</a><br />
+              <a href="https://www.linkedin.com/in/wai-ming-tai/">linkedin.com/in/wai-ming-tai</a>
+            </p>
+            <h2>Teaching</h2>
+            <p>Tutoring in Physics, Chemistry, English speaking, Economics, and Mathematics. Zoom, 1.5 hours, exam-focused with interactive Q&amp;A.</p>
+          </aside>
+        </div>
+      </div>
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Janice Tai</span>
+        <span>
+          <a href="https://www.linkedin.com/in/wai-ming-tai/">LinkedIn</a>
+          ·
+          <a href="mailto:waimingjanicetai@gmail.com">Email</a>
+        </span>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

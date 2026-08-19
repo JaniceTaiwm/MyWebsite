@@ -2,12 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=index.html#hobbies" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6E2C3A" />
+    <meta name="description" content="Hobbies of Janice Tai, with project pages for each." />
     <title>Janice Tai · Hobbies</title>
-    <link rel="canonical" href="index.html#hobbies" />
-    <script>location.replace("index.html#hobbies");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <p><a href="index.html#hobbies">Continue to hobbies</a></p>
+  <body class="inner-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Janice Tai</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="awards.html">Awards</a>
+          <a href="skills.html">Skills</a>
+          <a href="hobbies.html" aria-current="page">Hobbies</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+
+      <div class="container page">
+        <p class="eyebrow reveal">Hobbies</p>
+        <h1 class="reveal">Outside lectures and internships</h1>
+        <p class="hero-lede reveal">Open a hobby to add pieces, photos, or notes as projects.</p>
+        <div class="card-grid">
+          <a class="card hobby-card reveal" href="hobbies/piano.html"><div class="card-media" style="background:#8ca3b5">🎹</div><h2>Piano</h2><p>Playing for focus and reset between academic and internship weeks.</p><p class="card-cta">View projects →</p></a>
+          <a class="card hobby-card reveal" href="hobbies/crochet.html" style="--d: 0.06s"><div class="card-media" style="background:#c98fa0">🧶</div><h2>Crochet</h2><p>Slow, tactile making – small gifts, textures, and colour experiments.</p><p class="card-cta">View projects →</p></a>
+          <a class="card hobby-card reveal" href="hobbies/digital-art.html" style="--d: 0.12s"><div class="card-media" style="background:#a99b8b">🎨</div><h2>Digital art</h2><p>Sketching compositions and palettes as a counterpart to product and UX work.</p><p class="card-cta">View projects →</p></a>
+          <a class="card hobby-card reveal" href="hobbies/photography.html" style="--d: 0.18s"><div class="card-media" style="background:#d9c7b8;color:#6e2c3a">📷</div><h2>Photography</h2><p>Everyday scenes, travel, and details that later show up in decks and layouts.</p><p class="card-cta">View projects →</p></a>
+          <a class="card hobby-card reveal" href="hobbies/archery.html"><div class="card-media" style="background:#b5495b">🏹</div><h2>Archery</h2><p>Former secondary-school archery team captain – still drawn to precision sports.</p><p class="card-cta">View projects →</p></a>
+          <a class="card hobby-card reveal" href="hobbies/reading.html" style="--d: 0.06s"><div class="card-media" style="background:#6e2c3a">📚</div><h2>Reading</h2><p>Fiction and non-fiction in rotation, often alongside coursework and case prep.</p><p class="card-cta">View projects →</p></a>
+          <a class="card hobby-card reveal" href="hobbies/travel.html" style="--d: 0.12s"><div class="card-media" style="background:#7c7a85">✈️</div><h2>Travel</h2><p>Places and people – including my exchange at EPFL in Switzerland in Spring 2026.</p><p class="card-cta">View projects →</p></a>
+        </div>
+      </div>
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Janice Tai</span>
+        <span>
+          <a href="https://www.linkedin.com/in/wai-ming-tai/">LinkedIn</a>
+          ·
+          <a href="mailto:waimingjanicetai@gmail.com">Email</a>
+        </span>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

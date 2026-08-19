@@ -2,12 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=index.html#contact" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6E2C3A" />
+    <meta name="description" content="Contact Janice Tai." />
     <title>Janice Tai · Contact</title>
-    <link rel="canonical" href="index.html#contact" />
-    <script>location.replace("index.html#contact");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <p><a href="index.html#contact">Continue to contact</a></p>
+  <body class="inner-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Janice Tai</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="awards.html">Awards</a>
+          <a href="skills.html">Skills</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+
+      <div class="container page">
+        <p class="eyebrow reveal">Contact</p>
+        <h1 class="reveal">I would be glad to hear from you</h1>
+        <div class="contact-grid">
+          <section class="form-card reveal">
+            <h2>Send a message</h2>
+            <form id="contact-form">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required placeholder="What is this about?" />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Your message"></textarea>
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <p class="form-note">Opens your email app addressed to Janice. Nothing is stored on this site.</p>
+            </form>
+          </section>
+          <aside class="contact-side reveal" style="--d: 0.1s">
+            <h2>Direct links</h2>
+            <ul class="contact-list">
+              <li><span>Email</span><a href="mailto:waimingjanicetai@gmail.com">waimingjanicetai@gmail.com</a></li>
+              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/wai-ming-tai/">linkedin.com/in/wai-ming-tai</a></li>
+              <li><span>Location</span>Hong Kong</li>
+              <li><span>Languages</span>English · Cantonese · Putonghua</li>
+            </ul>
+            <h2>Tutoring</h2>
+            <p>Physics, Chemistry, English speaking, Economics, and Mathematics – exam-focused sessions on Zoom.</p>
+          </aside>
+        </div>
+      </div>
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Janice Tai</span>
+        <span>
+          <a href="https://www.linkedin.com/in/wai-ming-tai/">LinkedIn</a>
+          ·
+          <a href="mailto:waimingjanicetai@gmail.com">Email</a>
+        </span>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

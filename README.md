@@ -1,6 +1,6 @@
 # Janice Tai – Personal Website
 
-Public single-page portfolio for Janice Tai (Wai Ming), Year 3 Dual Degree student at HKUST (Computer Engineering & Marketing).
+Public multi-page portfolio for Janice Tai (Wai Ming), Year 3 Dual Degree student at HKUST (Computer Engineering & Marketing).
 
 ## Live site
 

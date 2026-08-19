@@ -94,27 +94,6 @@
     });
   }
 
-  const sections = ["about", "education", "experience", "awards", "skills", "hobbies", "resume", "contact"]
-    .map(function (id) {
-      return document.getElementById(id);
-    })
-    .filter(Boolean);
-
-  function setActiveNav() {
-    if (!nav) return;
-    let current = sections[0];
-    sections.forEach(function (section) {
-      if (section.getBoundingClientRect().top <= 120) current = section;
-    });
-    nav.querySelectorAll("a").forEach(function (link) {
-      const href = link.getAttribute("href") || "";
-      link.classList.toggle("is-active", current && href === "#" + current.id);
-    });
-  }
-
-  window.addEventListener("scroll", setActiveNav, { passive: true });
-  setActiveNav();
-
   const form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", function (event) {
