@@ -63,7 +63,7 @@ h1,
 h2,
 h3,
 .logo {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 700;
   color: var(--dark-2);
   line-height: 1.2;
@@ -253,22 +253,6 @@ ul {
   transition: background 0.15s ease, transform 0.15s ease;
 }
 
-.btn-cta {
-  background: var(--accent-5);
-  color: var(--white) !important;
-  border-bottom: 0 !important;
-  padding: 0.55rem 0.95rem;
-}
-
-.btn-cta:visited {
-  color: var(--white) !important;
-}
-
-.btn-cta:hover {
-  background: var(--dark-2);
-  color: var(--white) !important;
-}
-
 .btn-primary {
   background: var(--accent-5);
   color: var(--white);
@@ -294,14 +278,9 @@ ul {
   width: 200px;
   height: 200px;
   border-radius: 12px;
-  background:
-    linear-gradient(160deg, var(--accent-1) 0%, var(--dark-2) 100%);
-  color: var(--light-1);
-  display: grid;
-  place-items: center;
-  font-family: var(--font-serif);
-  font-size: 4rem;
-  letter-spacing: 0.04em;
+  object-fit: cover;
+  object-position: center 20%;
+  background: var(--accent-6);
 }
 
 .hero-copy h1 {
@@ -359,15 +338,45 @@ ul {
 
 .stat-card strong {
   display: block;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
+  font-weight: 700;
   font-size: 2rem;
   color: var(--accent-5);
 }
 
 .course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.course-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 4.25rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--accent-3);
+  border-radius: 10px;
+  background: var(--light-1);
+  color: var(--dark-2);
+  font-weight: 600;
+  font-size: 0.92rem;
+  box-shadow: 0 0 0 rgba(58, 50, 56, 0);
+  transform: translateY(0) scale(1);
+  transition:
+    transform 0.35s ease-in-out,
+    box-shadow 0.35s ease-in-out,
+    border-color 0.35s ease-in-out,
+    background-color 0.35s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(58, 50, 56, 0.12);
+  border-color: var(--accent-5);
+  background: var(--white);
 }
 
 /* Cards */
@@ -783,12 +792,6 @@ textarea {
   .site-nav a {
     padding: 0.7rem 0.4rem;
     border-bottom: 1px solid var(--light-2);
-  }
-
-  .site-nav .btn-cta {
-    margin-top: 0.4rem;
-    text-align: center;
-    border-bottom: 0 !important;
   }
 
   .hero {
