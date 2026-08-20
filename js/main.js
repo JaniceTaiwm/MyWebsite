@@ -5,14 +5,17 @@
   const typed = document.getElementById("typed-text");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  requestAnimationFrame(function () {
-    if (header) header.classList.add("is-in");
-  });
-
-  window.addEventListener("scroll", function () {
+  function updateHeader() {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 12);
-  }, { passive: true });
+    const range = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+    const scrolledPct = (window.scrollY / range) * 100;
+    const compact = scrolledPct >= 3;
+    header.classList.toggle("is-compact", compact);
+  }
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+  window.addEventListener("resize", updateHeader);
 
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
